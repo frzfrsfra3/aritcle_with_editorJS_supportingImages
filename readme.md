@@ -24,12 +24,8 @@ store for the application.
 ## Features
 
 * CRUD (create ) on posts (articles)
-* CRUD (create / read / update / delete ) on post(article) categories
-* Image upload for post cover
-* Creating comments on post page
-* Pagination on posts listing
-* Searching on posts
-* Authentication for the admin
+* Searching on Gif Images and uploading them using editor.js
+* Authentication for the logged user
 * Application ready for production
 
 ## Prerequisites
@@ -39,6 +35,7 @@ store for the application.
 * Git
 * Composer
 * Node.js v12.13.0
+* Vue.js 
 ## Getting Started
 
 * Clone the project from Github
@@ -51,13 +48,18 @@ store for the application.
 
          laravel-vue-spa-blog$ composer install
 
-* Create the database:
+* Install the packages for Vuejs:
 
-          laravel-vue-spa-blog$ touch database/database.sqlite
-          
+         laravel-vue-spa-blog$ npm install
+* If you want to enable upload file to editorjs/image change type in r.type="text" from "text" to "file" in the following file
+
+         laravel-vue-spa-blog$ vim C:\xampp\htdocs\laravel-vue-spa-blog-master2\node_modules\@editorjs\image\dist\bundle.js 
+
+* Create the database in MYSQL:
+
 * Create the .env file :
 
-          laravel-vue-spa-blog$ cp .env.example .env
+          laravel-vue-spa-blog$ cp .testing.env .env
         
 * Generate the encryption key for Laravel :
 
@@ -67,25 +69,19 @@ store for the application.
 
           laravel-vue-spa-blog$ vim .env
         
-* Change the DB_CONNECTION to put sqlite :
-
-          DB_CONNECTION=sqlite        
 
 * Load sample records:
 
-          laravel-vue-spa-blog$ php artisan migrate --seed
+          laravel-vue-spa-blog$ import "laravelx.sql" into Mysql Database and add the database name to .env file
 
 * Run the Laravel Server in development mode
 
-          laravel-vue-spa-blog$ php artisan serve
+          laravel-vue-spa-blog$ php artisan serve --port=2222
 
-* Start client in development mode. You should be able to go to `http://localhost:8000`
+* Start client in development mode. You should be able to go to `http://localhost:2222`
 
-* To access to the administration panel, there is a link in the bottom of the page or go to `http://localhost:8000/login`
+* To access to the administration panel, there is a link in the bottom of the page or go to `http://localhost:2222/login`
 
-## Next step
-
-* [ ] Create Laravel and React Single Page Application Forum
 
 ## Screens
 
@@ -98,9 +94,6 @@ store for the application.
 
 <img alt="Post page" src="https://i.imgur.com/wvQLSYZ.png" width="500">
 
-#### Creating comments
-
-<img alt="Creating comments" src="https://i.imgur.com/KvK31Ny.png" width="500">
 
 
 #### Login page
@@ -108,10 +101,10 @@ store for the application.
 <img alt="Post page" src="https://i.imgur.com/eWHg0RG.png" width="500">
 
 
-#### Create a post page (administration)
+## Videos
 
-<img alt="Post page" src="https://i.imgur.com/8oiI6kd.png" width="500">
+* I attached videos in Videos Folder
 
-## License
+## Information and enquiring
 
-MIT © 
+* For Further Info, dont hesitate to inform me on : mhd.feras97@gmail.com
