@@ -51,7 +51,7 @@ store for the application.
 * Install the packages for Vuejs:
 
          laravel-vue-spa-blog$ npm install
-* If you want to enable upload file to editorjs/image change type in r.type="text" from "text" to "file" in the following file
+* If you want to disable file browser in editorjs/image , change type in r.type="file" from "file" to "text" in the following file
 
          laravel-vue-spa-blog$ vim C:\xampp\htdocs\laravel-vue-spa-blog-master2\node_modules\@editorjs\image\dist\bundle.js 
 
@@ -108,3 +108,4 @@ store for the application.
 ## Information and enquiring
 
 * For Further Info, dont hesitate to inform me on : mhd.feras97@gmail.com
+* I can share the project with installed packages 
